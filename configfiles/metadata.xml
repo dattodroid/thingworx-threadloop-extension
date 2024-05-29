@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities>
+    <ExtensionPackages>
+        <ExtensionPackage
+         dependsOn=""
+         description="Runs a Script Service in a single thread loop on each platform nodes (for troubleshooting / monitoring)."
+         haCompatible="true"
+         minimumThingWorxVersion="9.0.0"
+         name="thingworx-threadloop-extension"
+         packageVersion="1.1.1"
+         vendor="sma">
+            <JarResources>
+                <FileResource
+                 description=""
+                 file="thingworx-threadloop-extension.jar"
+                 type="JAR"></FileResource>
+            </JarResources>
+        </ExtensionPackage>
+    </ExtensionPackages>
+    <ThingPackages>
+        <ThingPackage
+         className="ext.sma.tw.ThreadloopTemplate"
+         description=""
+         name="ThreadloopTemplatePackage"></ThingPackage>
+    </ThingPackages>
+    <ThingTemplates>
+        <ThingTemplate
+         aspect.isEditableExtensionObject="false"
+         description=""
+         name="ThreadloopTemplate"
+         thingPackage="ThreadloopTemplatePackage"></ThingTemplate>
+    </ThingTemplates>
+</Entities>
